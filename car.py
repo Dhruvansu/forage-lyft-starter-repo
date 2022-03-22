@@ -2,10 +2,10 @@ from serviceable import *
 
 
 class Car(Serviceable):
-    def __init__(self, engine, battery):
+    def __init__(self, engine, battery, tires):
         self.__engine = engine
         self.__battery = battery
+        self.__tires = tires
 
-    @abstractmethod
     def needs_service(self):
         pass
